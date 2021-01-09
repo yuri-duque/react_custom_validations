@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, TextField, Switch, FormControlLabel, Select, MenuItem, Box, FormControl, InputLabel, makeStyles } from "@material-ui/core";
+import { Button, TextField, Select, MenuItem, Box, FormControl, InputLabel, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     formControl: {

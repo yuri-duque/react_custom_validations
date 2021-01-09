@@ -41,8 +41,6 @@ function aoEnviarForm(dados) {
 function validaRegras(propriedade, valor) {
   const regra = regras.find(element => element.propriedade === propriedade);
 
-  console.log(regra);
-
   let result;
 
   switch (regra.operador) {
@@ -68,8 +66,6 @@ function validaRegras(propriedade, valor) {
       result = validarOperadorObrigatorio(regra, valor);
       break;
   }
-
-  console.log(result);
 
   return { valido: result, texto: regra.mensagemErro }
 }
