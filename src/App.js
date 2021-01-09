@@ -17,7 +17,7 @@ class App extends Component {
           </Container>
         </Box>
 
-        <Typography variant="h3" component="h1" align="center">Regras salvas: {regras.length}</Typography>
+        <Typography variant="h5" align="center">Regras salvas: {regras.length}</Typography>
 
         <Box p={2} m={2} bgcolor="background.paper">
           <Container component="article" maxWidth="sm">
