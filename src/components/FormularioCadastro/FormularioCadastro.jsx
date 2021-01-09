@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, TextField, Switch, FormControlLabel } from "@material-ui/core";
 
-function FormularioCadastro({ aoEnviar, validarCPF, validaRegras }) {
+function FormularioCadastro({ aoEnviar, validaRegras }) {
 
   // states
   const [nome, setNome] = useState("");
