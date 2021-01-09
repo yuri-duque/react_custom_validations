@@ -36,6 +36,10 @@ function FormularioRegras({ aoEnviar }) {
         <form onSubmit={event => {
             event.preventDefault();
             aoEnviar({ propriedade, operador, valor, mensagemErro });
+            setPropriedade(null);
+            setOperador(null);
+            setValor(null);
+            setMensagemErro(null);
         }}>
 
             <Box display="flex" justifyContent="center">
