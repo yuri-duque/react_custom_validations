@@ -65,6 +65,9 @@ function validaRegras(propriedade, valor) {
     case 'obrigatorio':
       result = validarOperadorObrigatorio(regra, valor);
       break;
+    default:
+      result = false;
+      break;
   }
 
   return { valido: result, texto: regra.mensagemErro }
