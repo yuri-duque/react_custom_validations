@@ -17,6 +17,8 @@ class App extends Component {
           </Container>
         </Box>
 
+        <Typography variant="h3" component="h1" align="center">Regras salvas: {regras.length}</Typography>
+
         <Box p={2} m={2} bgcolor="background.paper">
           <Container component="article" maxWidth="sm">
             <Typography variant="h3" component="h1" align="center">Cadastro de usuários</Typography>
@@ -68,7 +70,7 @@ function validaRegras(propriedade, valor) {
     default:
       result = false;
       break;
-  }
+  } 
 
   return { valido: result, texto: regra.mensagemErro }
 }
