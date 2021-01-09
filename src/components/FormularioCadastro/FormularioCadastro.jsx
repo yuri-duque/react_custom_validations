@@ -57,7 +57,7 @@ function FormularioCadastro({ aoEnviar, validaRegras }) {
         onChange={handleNomeChange}
         onBlur={onBlurNome}
         error={!erros.nome.valido}
-        helperText={erros.nome.texto}
+        helperText={!erros.nome.valido ? erros.nome.texto : ""}
         id="nome"
         label="Nome"
         variant="outlined"
@@ -70,7 +70,7 @@ function FormularioCadastro({ aoEnviar, validaRegras }) {
         onChange={handleSobrenomeChange}
         onBlur={onBlurSobrenome}
         error={!erros.sobrenome.valido}
-        helperText={erros.sobrenome.texto}
+        helperText={!erros.sobrenome.valido ? erros.sobrenome.texto : ""}
         id="sobrenome"
         label="Sobrenome"
         variant="outlined"
@@ -83,7 +83,7 @@ function FormularioCadastro({ aoEnviar, validaRegras }) {
         onChange={handleCPFChange}
         onBlur={onBlurCpf}
         error={!erros.cpf.valido}
-        helperText={erros.cpf.texto}
+        helperText={!erros.cpf.valido ? erros.cpf.texto : ""}
         id="cpf"
         label="CPF"
         variant="outlined"
