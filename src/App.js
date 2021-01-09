@@ -39,7 +39,6 @@ function aoEnviarForm(dados) {
 }
 
 function validaRegras(propriedade, valor) {
-  debugger;
   const regra = regras.find(element => element.propriedade === propriedade);
 
   console.log(regra);
